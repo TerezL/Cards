@@ -1,0 +1,186 @@
+body{
+  background-image: url(./components/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  font-family: "Space Grotesk", sans-serif;
+}
+input{
+  margin: 0;
+}
+
+.form-control:focus{
+  border-width: 2px;
+border-style: solid;
+border-image: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)) 1;
+
+  box-shadow: none;
+    outline: none;
+    clip-path: inset(0 round 5px);
+}
+
+label{
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+.exp label{
+  display: block;
+}
+
+.month {
+  width: 45%;
+ display: inline;
+  
+}
+
+.year {
+  width: 45%;
+  display: inline;
+  margin-left: 1rem;
+}
+
+
+.formsec {
+  width: 60%;
+ margin: 0 auto;
+}
+
+button {
+  width: 100%;
+  color: white;
+  background-color: black;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+
+.frontcard{
+  margin: 5rem 0 0 3rem;
+  position: relative;
+}
+
+.cardlogo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.cnumber {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+.cname{
+  position: absolute;
+  color: white;
+  top: 200px;
+  left: 40px;
+}
+
+.cexp{
+  position: absolute;
+  color: white;
+  top: 200px;
+  left: 350px;
+}
+
+.error{
+  color: hsl(0, 100%, 66%);
+  font-size: 11px;
+}
+.backcard {
+  margin: 2rem 0 0 8rem;
+  position: relative;
+}
+.ccvc {
+  position: absolute;
+  top: 110px;
+  left: 350px;
+  color: white;
+}
+
+.thanks{
+  text-align: center;
+}
+
+.thanks img{
+  margin: 1rem;
+}
+
+@media screen and (max-width: 600px){
+body{
+  background-image: url(./components/images/bg-main-mobile.png);
+  background-size: 100%;
+  margin: 1rem;
+}
+.formsec{
+  width: 100%;
+  margin: 10rem 0 2rem 0;
+}
+.cards {
+  display: flex; flex-flow: column;
+}
+
+.frontcard {
+  margin: 0;
+  order: 2;
+  z-index: 1;
+  position: absolute;
+  top: 140px;
+}
+.frontcard img{
+  width: 90%;
+}
+.backcard {
+  margin: 0 0 0 4rem;
+  order: 1;
+  z-index: 0;
+  position: relative;
+}
+.backcard img{
+  width: 100%;
+}
+.cnumber {
+  position: absolute;
+  top: 110px;
+  left: 30px;
+  color: white;
+  letter-spacing: 0.3rem;
+}
+.cname{
+  position: absolute;
+  color: white;
+  top: 175px;
+  left: 30px;
+}
+
+.cexp{
+  position: absolute;
+  color: white;
+  top: 175px;
+  left: 320px;
+}
+.ccvc {
+  position: absolute;
+  top: 92px;
+  left: 305px;
+  color: white;
+}
+}
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
